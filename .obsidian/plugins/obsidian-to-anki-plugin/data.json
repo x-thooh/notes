@@ -1,0 +1,61 @@
+{
+  "settings": {
+    "CUSTOM_REGEXPS": {
+      "Basic (and reversed card)-627e9": "",
+      "Basic-627e9": "",
+      "单选题": "",
+      "图片遮盖": "",
+      "填空题": "",
+      "知识点": "",
+      "问答题": "",
+      "问答题+": "",
+      "问答题（可选附翻转卡片）": "",
+      "问答题（输入答案）": "",
+      "问答题（附翻转卡片）": ""
+    },
+    "FILE_LINK_FIELDS": {
+      "Basic (and reversed card)-627e9": "Front",
+      "Basic-627e9": "Front",
+      "单选题": "Question",
+      "图片遮盖": "遮盖",
+      "填空题": "文字",
+      "知识点": "《》",
+      "问答题": "正面",
+      "问答题+": "正面",
+      "问答题（可选附翻转卡片）": "正面",
+      "问答题（输入答案）": "正面",
+      "问答题（附翻转卡片）": "正面"
+    },
+    "CONTEXT_FIELDS": {},
+    "FOLDER_DECKS": {},
+    "FOLDER_TAGS": {},
+    "Syntax": {
+      "Begin Note": "START",
+      "End Note": "END",
+      "Begin Inline Note": "STARTI",
+      "End Inline Note": "ENDI",
+      "Target Deck Line": "TARGET DECK",
+      "File Tags Line": "FILE TAGS",
+      "Delete Note Line": "DELETE",
+      "Frozen Fields Line": "FROZEN"
+    },
+    "Defaults": {
+      "Scan Directory": "",
+      "Tag": "Obsidian_to_Anki",
+      "Deck": "Default",
+      "Scheduling Interval": 0,
+      "Add File Link": false,
+      "Add Context": false,
+      "CurlyCloze": false,
+      "CurlyCloze - Highlights to Clozes": false,
+      "ID Comments": true,
+      "Add Obsidian Tags": false
+    },
+    "IGNORED_FILE_GLOBS": [
+      "**/*.excalidraw.md"
+    ]
+  },
+  "Added Media": [],
+  "File Hashes": {},
+  "fields_dict": {}
+}

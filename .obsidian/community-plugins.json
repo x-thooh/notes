@@ -1,5 +1,9 @@
 [
   "obsidian-git",
   "obsidian-image-auto-upload-plugin",
-  "obsidian-paste-image-rename"
+  "obsidian-paste-image-rename",
+  "templater-obsidian",
+  "obsidian-admonition",
+  "pkmer",
+  "obsidian-to-anki-plugin"
 ]
