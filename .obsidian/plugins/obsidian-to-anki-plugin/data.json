@@ -27,8 +27,14 @@
       "问答题（附翻转卡片）": "正面"
     },
     "CONTEXT_FIELDS": {},
-    "FOLDER_DECKS": {},
-    "FOLDER_TAGS": {},
+    "FOLDER_DECKS": {
+      "Inbox": "",
+      "Templates": ""
+    },
+    "FOLDER_TAGS": {
+      "Inbox": "",
+      "Templates": ""
+    },
     "Syntax": {
       "Begin Note": "START",
       "End Note": "END",
@@ -44,18 +50,85 @@
       "Tag": "Obsidian_to_Anki",
       "Deck": "Default",
       "Scheduling Interval": 0,
-      "Add File Link": false,
+      "Add File Link": true,
       "Add Context": false,
       "CurlyCloze": false,
       "CurlyCloze - Highlights to Clozes": false,
       "ID Comments": true,
-      "Add Obsidian Tags": false
+      "Add Obsidian Tags": true
     },
     "IGNORED_FILE_GLOBS": [
-      "**/*.excalidraw.md"
+      "**/*.excalidraw.md",
+      "**/Stand Note.md"
     ]
   },
   "Added Media": [],
-  "File Hashes": {},
-  "fields_dict": {}
+  "File Hashes": {
+    "小生活.md": "3728c6390f08212159fae0156036891d",
+    "Templates/Zettel Note.md": "a7ae4204f243e2c709af296458cf4982",
+    "Templates/Stand Note.md": "33b58ec6d840f599b27737b52d042f96",
+    "Obsidian 图片上传.md": "68b329da9893e34099c7d8ad5cb9c940",
+    "Obsidian Git.md": "68b329da9893e34099c7d8ad5cb9c940",
+    "OO.md": "9f5b6a1f49749faef467fdfbcf25518f",
+    "Inbox/202605301621.md": "a6ed20be6ec3ab1890147f11e6213708",
+    "UU.md": "31f07193c3bc48360b3eafd90935d221",
+    "有意义.md": "3a17c56f7366e197482ffa6e49548ea4",
+    "主题.md": "b4f1067100ac809433aa03250d3eb51b",
+    "Obsidian 资源管理.md": "68b329da9893e34099c7d8ad5cb9c940",
+    "Obsidian 数据同步.md": "68b329da9893e34099c7d8ad5cb9c940"
+  },
+  "fields_dict": {
+    "Basic (and reversed card)-627e9": [
+      "Front",
+      "Back"
+    ],
+    "Basic-627e9": [
+      "Front",
+      "Back"
+    ],
+    "单选题": [
+      "Question",
+      "Options",
+      "Extra"
+    ],
+    "图片遮盖": [
+      "遮盖",
+      "图片",
+      "标题",
+      "背面额外",
+      "注释"
+    ],
+    "填空题": [
+      "文字",
+      "背面额外"
+    ],
+    "知识点": [
+      "《》",
+      "问题",
+      "答案",
+      "笔记",
+      "相关知识"
+    ],
+    "问答题": [
+      "正面",
+      "背面"
+    ],
+    "问答题+": [
+      "正面",
+      "背面"
+    ],
+    "问答题（可选附翻转卡片）": [
+      "正面",
+      "背面",
+      "增加翻转的卡片"
+    ],
+    "问答题（输入答案）": [
+      "正面",
+      "背面"
+    ],
+    "问答题（附翻转卡片）": [
+      "正面",
+      "背面"
+    ]
+  }
 }

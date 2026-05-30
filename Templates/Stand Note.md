@@ -1,45 +1,24 @@
 <%*
-// 1. 弹窗输入标题
-let noteTitle = await tp.system.prompt("请输入笔记的技术主题:");
-if (noteTitle) {
-    await tp.file.rename(noteTitle);
-} else {
-	noteTitle = tp.file.title;
-}
+// 1. 标题与重命名 
+let noteTitle = await tp.system.prompt("请输入笔记的技术主题:"); if (noteTitle) { await tp.file.rename(noteTitle); } else { noteTitle = tp.file.title; } tp.user_title = noteTitle;
 
-// 2. 弹窗下拉选择 Anki 牌组 (极客专属)
-// 前一个中括号是“显示给你的选项”，后一个中括号是“真正写入的 Anki 牌组名”
-let deckName = await tp.system.suggester(
-    [
-	    "💻 后端微服务 (Backend)", 
-	    "☁️ 云原生与基建 (CloudNative)", 
-	    "🛠️ Go语言底层 (Golang)", 
-	    "📝 通用默认 (Default)",
-	],
-    [
-	    "ComputerScience::Backend", 
-	    "ComputerScience::CloudNative", 
-	    "ComputerScience::Golang", 
-	    "ComputerScience::Default",
-	]
-);
+// 2. 牌组选择 
+let deckName = await tp.system.suggester( ["💻 后端微服务", "☁️ 云原生", "🛠️ Go语言底层"], ["ComputerScience::Backend", "ComputerScience::CloudNative", "ComputerScience::Golang"] ); tp.user_deck = deckName || "ComputerScience::Backend";
 
-// 如果你直接按 ESC 没选，给一个兜底的默认值
-if (!deckName) {
-    deckName = "ComputerScience::Default";
-}
+// 3. 难度评级 (用于同步到 Anki 的 Tag，辅助复习) 
+let difficulty = await tp.system.suggester(["⭐ 简单", "⭐⭐ 中等", "⭐⭐⭐ 困难"], ["Lv1", "Lv2", "Lv3"]); tp.user_diff = difficulty || "Lv2";
 
-// 3. 【核心黑科技】将选择的牌组名挂载到 tp 全局对象上，供正文读取
-tp.custom_deck = deckName;
 -%>
 ---
 tags:
   - tech/growing
   - status/review
+  - <% tp.user_diff %>
 date: <% tp.file.creation_date("YYYY-MM-DD HH:mm") %>
-anki-deck: <% tp.custom_deck %>
+anki-deck: <% tp.user_deck %>
+
 ---
-# <% noteTitle %>
+# <% tp.user_title %>
 
 > [!abstract] 场景与痛点 (Why)
 > - **核心诉求：** 填入解决什么问题、应对什么业务场景
@@ -56,8 +35,10 @@ graph TD
 ```
 
 ### 生产环境约束与踩坑点
-- [ ] **服务发现：** 
-- [ ] **资源限制：**
+- [ ] **服务发现：**
+- [ ] **资源限制：** 
+
+---
 
 ## 配置与核心代码 (Code)
 
@@ -74,18 +55,24 @@ func main() {
 
 ---
 
-## Anki 记忆卡片
+## 记忆卡
 
-> [!info] Anki 卡片配置区
-> TARGET DECK: <% tp.custom_deck %>
-> START
-> Cloze
-> 关于 **<% noteTitle %>**，其核心配置/核心机制的关键在于：{==填入核心记忆点==}。
-> FILE: <% noteTitle %>
-> END
+TARGET DECK: <% tp.user_deck %> 
+START 
+填空题 
+1. 关于 **<% tp.user_title %>**，其核心机制在于：{{c1::填入核心机制}}。 
+2. 当出现 {{c2::异常场景}} 时，系统表现为 {{c3::现象描述}}。 
+FILE: <% tp.user_title %> 
+END 
+
+START 
+问答题 
+Front: <% tp.user_title %> 的核心用途是什么？ 
+Back:
+END
 
 ---
 
 ## 延伸阅读
 * **归属主题索引：** [[微服务架构MOC]] / [[云原生基础设施]]
-* **参考文档：** 
+* **参考文档：**
