@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UUU.md",
+                "file": "www.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "UUU"
+              "title": "www"
             }
           }
         ]
@@ -189,8 +189,9 @@
   },
   "active": "37e92d9f2566c8ce",
   "lastOpenFiles": [
-    "Templates/Teach Note.md",
     "UUU.md",
+    "www.md",
+    "Templates/Teach Note.md",
     "111.md",
     "Templates/Stand Note.md",
     "Inbox/202605301621.md",
@@ -218,7 +219,6 @@
     "测试.md",
     "Inbox",
     "Templates/Zettel Note.md",
-    "202605301615.md",
     "Templates",
     "Obsidian Git--20260530.png",
     "e5255867fc07fa695537e55e3fde71a0_MD5.jpg",

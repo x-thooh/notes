@@ -1,0 +1,133 @@
+{
+  "settings": {
+    "CUSTOM_REGEXPS": {
+      "Basic (and reversed card)-627e9": "",
+      "Basic-627e9": "",
+      "单选题": "",
+      "图片遮盖": "",
+      "填空题": "",
+      "知识点": "",
+      "问答题": "",
+      "问答题+": "",
+      "问答题（可选附翻转卡片）": "",
+      "问答题（输入答案）": "",
+      "问答题（附翻转卡片）": ""
+    },
+    "FILE_LINK_FIELDS": {
+      "Basic (and reversed card)-627e9": "Front",
+      "Basic-627e9": "Front",
+      "单选题": "Question",
+      "图片遮盖": "遮盖",
+      "填空题": "文字",
+      "知识点": "《》",
+      "问答题": "正面",
+      "问答题+": "正面",
+      "问答题（可选附翻转卡片）": "正面",
+      "问答题（输入答案）": "正面",
+      "问答题（附翻转卡片）": "正面"
+    },
+    "CONTEXT_FIELDS": {},
+    "FOLDER_DECKS": {
+      "Inbox": "",
+      "Journal": "",
+      "Knowledge": "",
+      "Reference": "",
+      "Templates": ""
+    },
+    "FOLDER_TAGS": {
+      "Inbox": "",
+      "Journal": "",
+      "Knowledge": "",
+      "Reference": "",
+      "Templates": ""
+    },
+    "Syntax": {
+      "Begin Note": "START",
+      "End Note": "END",
+      "Begin Inline Note": "STARTI",
+      "End Inline Note": "ENDI",
+      "Target Deck Line": "TARGET DECK",
+      "File Tags Line": "FILE TAGS",
+      "Delete Note Line": "DELETE",
+      "Frozen Fields Line": "FROZEN"
+    },
+    "Defaults": {
+      "Scan Directory": "",
+      "Tag": "Obsidian_to_Anki",
+      "Deck": "Default",
+      "Scheduling Interval": 0,
+      "Add File Link": false,
+      "Add Context": false,
+      "CurlyCloze": false,
+      "CurlyCloze - Highlights to Clozes": false,
+      "ID Comments": true,
+      "Add Obsidian Tags": false
+    },
+    "IGNORED_FILE_GLOBS": [
+      "**/*.excalidraw.md",
+      "**/Templates/*.md"
+    ]
+  },
+  "Added Media": [],
+  "File Hashes": {
+    "UUU.md": "f200bd28dfbb2ab4464082e9fc05e4be",
+    "Obsidian 资源管理.md": "68b329da9893e34099c7d8ad5cb9c940",
+    "Obsidian 数据同步.md": "68b329da9893e34099c7d8ad5cb9c940",
+    "Inbox/202605301621.md": "a6ed20be6ec3ab1890147f11e6213708",
+    "www.md": "fe0a424eab9e4dd05004dd7185fc35c3"
+  },
+  "fields_dict": {
+    "Basic (and reversed card)-627e9": [
+      "Front",
+      "Back"
+    ],
+    "Basic-627e9": [
+      "Front",
+      "Back"
+    ],
+    "单选题": [
+      "Question",
+      "Options",
+      "Extra"
+    ],
+    "图片遮盖": [
+      "遮盖",
+      "图片",
+      "标题",
+      "背面额外",
+      "注释"
+    ],
+    "填空题": [
+      "文字",
+      "背面额外"
+    ],
+    "知识点": [
+      "《》",
+      "问题",
+      "答案",
+      "笔记",
+      "相关知识"
+    ],
+    "问答题": [
+      "正面",
+      "背面"
+    ],
+    "问答题+": [
+      "正面",
+      "背面"
+    ],
+    "问答题（可选附翻转卡片）": [
+      "正面",
+      "背面",
+      "增加翻转的卡片"
+    ],
+    "问答题（输入答案）": [
+      "正面",
+      "背面"
+    ],
+    "问答题（附翻转卡片）": [
+      "正面",
+      "背面"
+    ]
+  }
+}
