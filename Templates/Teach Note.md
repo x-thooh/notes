@@ -20,52 +20,23 @@ anki-deck: <% tp.tech %>
 ---
 # <% tp.title %>
 
-> [!abstract] 场景与痛点 (Why)
-> - **核心诉求：** 填入解决什么问题、应对什么业务场景
-> - **前置上下文：** 填入依赖的服务或基础设施版本
+## 场景/问题
 
----
 
-## 核心架构 / 机制 (How)
+## 解决方案
 
-```mermaid
-graph TD
-    A[客户端/网关] -->|gRPC/DialInsecure| B[Nacos 注册中心]
-    B -->|服务发现| C[Kratos 微服务]
-```
 
-### 生产环境约束与踩坑点
-- [ ] **服务发现：**
-- [ ] **资源限制：** 
+## 思考过程
 
----
 
-## 配置与核心代码 (Code)
+## 参考文档
 
-```go
-package main
-
-import "fmt"
-
-func main() {
-    // TODO: 完善业务逻辑
-    fmt.Println("System initialized.")
-}
-```
-
----
 
 ## 记忆卡
-
+ˆ
 TARGET DECK: Note::<% tp.tech %>
 START 
 填空题
 1. 关于 **<% tp.title %>**，其核心机制在于：{{c1::填入核心机制}}。
 FILE: <% tp.title %>
 END
-
----
-
-## 延伸阅读
-* **归属主题索引：** [[微服务架构MOC]] / [[云原生基础设施]]
-* **参考文档：**
