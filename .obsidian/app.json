@@ -1,3 +1,7 @@
 {
-  "promptDelete": false
+  "promptDelete": true,
+  "attachmentFolderPath": "_resources",
+  "showInlineTitle": false,
+  "readableLineLength": true,
+  "showLineNumber": true
 }

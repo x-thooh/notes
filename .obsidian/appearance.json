@@ -1,3 +1,9 @@
 {
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [],
+  "showViewHeader": false,
+  "showRibbon": false,
+  "baseFontSizeAction": false,
+  "cssTheme": "Minimal",
+  "textFontFamily": "PingFang SC",
+  "monospaceFontFamily": "JetBrains Mono"
 }

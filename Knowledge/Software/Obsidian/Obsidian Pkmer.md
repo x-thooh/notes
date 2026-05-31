@@ -5,14 +5,14 @@ tags:
   - status/growing
   - topic/Engineering
   - priority/Lv1
-date: 2026-05-31 01:00
-updated: 2026-05-31 01:00
+date: 2026-05-31 09:41
+updated: 2026-05-31 09:42
 status: growing
 topic: Engineering
 priority: Lv1
 deck: Note::Engineering
 ---
-# Obsidian 资源管理
+# Obsidian Pkmer
 
 ## 摘要
 > [!tip] 快速判断这个工具是否值得长期使用。
