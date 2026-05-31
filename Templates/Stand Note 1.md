@@ -3,7 +3,7 @@
 let title = await tp.system.prompt("请输入笔记标题:"); if (title) { await tp.file.rename(title); } else { title = tp.file.title; } tp.title = title;
 
 // 2. 内容类型 
-let tech = await tp.system.suggester( ["微服务", "云原生", "设施", "语言", "算法"], ["Microservices", "CloudNative", "Infra", "Lang", "Algorithm"] ); tp.tech = tech || "Lang";
+let tech = await tp.system.suggester( ["工具", "微服务", "云原生", "设施", "语言", "算法", "数据库", "中间件", "安全"], ["Tool", "Microservices", "CloudNative", "Infra", "Lang", "Algorithm", "Database", "Middleware", "Security"] ); tp.tech = tech || "Lang";
 
 // 3. 难度评级
 let priority = await tp.system.suggester(["⭐ 简单", "⭐⭐ 中等", "⭐⭐⭐ 困难"], ["Lv1", "Lv2", "Lv3"]); tp.priority = priority || "Lv2";
@@ -14,8 +14,10 @@ tags:
   - status/growing
   - tech/<% tp.tech %>
   - priority/<% tp.priority %>
+aliases: []
 date: <% tp.file.creation_date("YYYY-MM-DD HH:mm") %>
-anki-deck: <% tp.tech %>
+updated: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+deck: Note::<% tp.tech %>
 
 ---
 # <% tp.title %>
@@ -42,6 +44,10 @@ graph TD
 
 ## 配置与核心代码 (Code)
 
+> [!tip] 最小复现环境
+> - 运行命令：`TODO`
+> - 版本信息：`TODO`
+
 ```go
 package main
 
@@ -56,13 +62,15 @@ func main() {
 ---
 
 ## 记忆卡
-
-TARGET DECK: Note::<% tp.tech %>
-START 
+START
 填空题
-1. 关于 **<% tp.title %>**，其核心机制在于：{{c1::填入核心机制}}。
-FILE: <% tp.title %>
+文字: 本笔记的核心机制是什么？
+背面额外: TODO
 END
+
+
+#### 核心机制是什么？ 
+TODO：用一句话写出本笔记核心机制。
 
 ---
 

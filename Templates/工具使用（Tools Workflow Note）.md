@@ -1,18 +1,11 @@
----
-tags:
-  - note/standard
-  - type/tools-workflow
-  - status/growing
-  - topic/Engineering
-  - priority/Lv1
-date: 2026-05-31 01:00
-updated: 2026-05-31 01:00
-status: growing
-topic: Engineering
-priority: Lv1
-deck: Note::Engineering
----
-# Obsidian 资源管理
+<%*
+await tp.user.note_base.setupTitle(tp, "请输入工具或工作流名称:");
+tp.user.note_base.setTopic(tp, "Engineering");
+await tp.user.note_base.choosePriority(tp);
+await tp.user.note_base.chooseStatus(tp);
+tR += tp.user.note_base.renderFrontmatter(tp, "tools-workflow");
+-%>
+# <% tp.title %>
 
 ## 摘要
 > [!tip] 快速判断这个工具是否值得长期使用。
