@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1780291245116,
+      "items": [
+        {
+          "type": "group",
+          "ctime": 1780291245116,
+          "items": [
+            {
+              "type": "group",
+              "ctime": 1780291245116,
+              "items": [],
+              "title": "Software"
+            },
+            {
+              "type": "group",
+              "ctime": 1780291317531,
+              "items": [],
+              "title": "数据结构"
+            }
+          ],
+          "title": "\\\\Knowledge"
+        }
+      ],
+      "title": "sortspec"
+    }
+  ]
+}

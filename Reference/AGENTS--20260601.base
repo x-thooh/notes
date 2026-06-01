@@ -1,15 +1,13 @@
 filters:
   and:
-    - 'file.ext == "md"'
+    - file.ext == "md"
     - or:
-        - 'file.inFolder("Inbox")'
-        - 'file.inFolder("Journal")'
-    - 'status == "todo" || status == "doing" || status == "waiting" || status == "done"'
-
+        - file.inFolder("Inbox")
+        - file.inFolder("Journal")
+    - status == "todo" || status == "doing" || status == "waiting" || status == "done"
 formulas:
-  due_in_days: 'if(due, (date(due) - today()).days, "")'
-  overdue: 'if(due, date(due) < today() && status != "done", false)'
-
+  due_in_days: if(due, (date(due) - today()).days, "")
+  overdue: if(due, date(due) < today() && status != "done", false)
 properties:
   status:
     displayName: Status
@@ -27,7 +25,6 @@ properties:
     displayName: D-Left
   formula.overdue:
     displayName: Overdue
-
 views:
   - type: table
     name: 看板
@@ -43,12 +40,16 @@ views:
       - tags
       - formula.due_in_days
       - formula.overdue
-
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 282
   - type: table
     name: 到期视图
     filters:
       and:
-        - 'status != "done"'
+        - status != "done"
     order:
       - file.name
       - due
