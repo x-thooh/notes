@@ -1,0 +1,18 @@
+{
+  "sortOrder": {
+    "Knowledge/数据结构": 0,
+    "Knowledge/数据结构/概述.md": 0,
+    "Knowledge/Software": 2,
+    "Knowledge/数据结构/算法": 1,
+    "Knowledge/数据结构/算法/概述.md": 0,
+    "Knowledge/数据结构/算法/排序": 1
+  },
+  "collapsedFolders": {},
+  "hideFileExtensions": false,
+  "showIcons": true,
+  "showBaseBadge": false,
+  "outlineMode": "focused",
+  "outlineColor": "",
+  "useCustomOutlineColor": true,
+  "modifierAction": "openNewTab"
+}

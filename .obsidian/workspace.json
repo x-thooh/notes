@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9fa1bca6ed9145c3",
+        "id": "256da2e9c5f8da49",
         "type": "tabs",
         "children": [
           {
-            "id": "bf2fd8dd3e6b4180",
+            "id": "26d88a3332afb1ea",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Knowledge/数据结构/算法/排序/总述.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "总述"
             }
           }
         ]
@@ -71,13 +75,13 @@
             }
           },
           {
-            "id": "ea6d65883b086a29",
+            "id": "4d873589b4711700",
             "type": "leaf",
             "state": {
-              "type": "mk-path-view",
+              "type": "my-file-explorer-view",
               "state": {},
-              "icon": "layout-grid",
-              "title": "Navigator"
+              "icon": "folder",
+              "title": "Sortable File Explorer"
             }
           }
         ],
@@ -162,12 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Knowledge/数据结构/算法/排序/总述.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "总述 的大纲"
             }
           }
         ],
@@ -175,8 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,12 +196,18 @@
       "templater-obsidian:Templater": false,
       "pkmer:Open Pkmer Market": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "sortable-file-explorer:Sortable File Explorer": false
     }
   },
-  "active": "bf2fd8dd3e6b4180",
+  "active": "26d88a3332afb1ea",
   "lastOpenFiles": [
+    "Knowledge/数据结构/算法/概述.md",
+    "Knowledge/数据结构/算法/排序/总述.md",
+    "Knowledge/数据结构/算法/排序",
     "Knowledge/数据结构/概述.md",
+    "Inbox/闪念胶囊.md",
+    "未命名",
     "Knowledge/数据结构/Untitled.md",
     "Tags",
     "Knowledge/数据结构/算法",
@@ -207,7 +217,6 @@
     "_resources/Pasted image 20260531110626.png",
     "Knowledge/数据结构",
     "Reference/AGENTS--20260601.base",
-    "Inbox/闪念胶囊.md",
     "Templates/任务卡（Task Note）.md",
     "README.md",
     "Inbox/111.md",
@@ -227,11 +236,9 @@
     "Obsidian 资源管理.md",
     "Knowledge/Software",
     "Attachments/Pasted image 20260531090040.png",
-    "Attachments",
     "Pasted image 20260531085757.png",
     "Untitled/啦啦啦啦.md",
     "Untitled/Attachments/Pasted image 20260531090032.png",
-    "Untitled/Attachments",
     "Untitled/Pasted image 20260531090007.png",
     "Untitled 1.md",
     "Pasted image 20260531085745.png",
@@ -239,8 +246,6 @@
     "Templates/阅读书籍（Reading Note）.md",
     "有意义.md",
     "Templates/项目架构（Architecture Note）.md",
-    "Templates/框架学习（Learning Note）.md",
-    "Templates/故障处理（Troubleshooting Note）.md",
     "Obsidian Git--20260530.png",
     "e5255867fc07fa695537e55e3fde71a0_MD5.jpg"
   ]
