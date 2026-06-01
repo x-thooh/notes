@@ -1,0 +1,59 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - or:
+        - 'file.inFolder("Inbox")'
+        - 'file.inFolder("Journal")'
+    - 'status == "todo" || status == "doing" || status == "waiting" || status == "done"'
+
+formulas:
+  due_in_days: 'if(due, (date(due) - today()).days, "")'
+  overdue: 'if(due, date(due) < today() && status != "done", false)'
+
+properties:
+  status:
+    displayName: Status
+  due:
+    displayName: Due
+  priority:
+    displayName: Priority
+  topic:
+    displayName: Topic
+  owner:
+    displayName: Owner
+  tags:
+    displayName: Tags
+  formula.due_in_days:
+    displayName: D-Left
+  formula.overdue:
+    displayName: Overdue
+
+views:
+  - type: table
+    name: 看板
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - file.name
+      - due
+      - priority
+      - topic
+      - owner
+      - tags
+      - formula.due_in_days
+      - formula.overdue
+
+  - type: table
+    name: 到期视图
+    filters:
+      and:
+        - 'status != "done"'
+    order:
+      - file.name
+      - due
+      - formula.due_in_days
+      - priority
+      - topic
+      - owner
+      - tags

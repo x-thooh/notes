@@ -1,7 +1,9 @@
 {
-  "enabledCssSnippets": [],
-  "showViewHeader": false,
-  "showRibbon": false,
+  "enabledCssSnippets": [
+    "font-fix"
+  ],
+  "showViewHeader": true,
+  "showRibbon": true,
   "baseFontSizeAction": false,
   "cssTheme": "Minimal",
   "textFontFamily": "PingFang SC",

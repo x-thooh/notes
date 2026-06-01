@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Obsidian 现代全功能美化片段 (自适应亮暗模式)
+   ========================================================================== */
+
+/* --- 1. 页面与正文排版微调 --- */
+.markdown-source-view.mod-cm6 .cm-scroller, .markdown-rendered {
+    font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    line-height: 1.8 !important;   /* 黄金行高 */
+    letter-spacing: 0.03em !important; /* 缓解中文字体拥挤 */
+}
+
+/* 优化段落间距 */
+.markdown-rendered p, .cm-line {
+    margin-bottom: 0.8em !important;
+}
+
+/* --- 2. 标题层级美化 (增强视觉锚点) --- */
+.markdown-rendered h1, .cm-header-1 { font-weight: 700 !important; color: var(--text-title-h1, var(--text-normal)) !important; border-bottom: 1px solid rgba(128,128,128,0.15); padding-bottom: 0.3em; }
+.markdown-rendered h2, .cm-header-2 { font-weight: 600 !important; margin-top: 1.5em !important; }
+.markdown-rendered h3, .cm-header-3 { font-weight: 600 !important; color: var(--text-muted) !important; }
+
+/* --- 3. 工业级大代码块 (Code Block) 增强 --- */
+.HyperMD-codeblock, .markdown-rendered pre {
+    border-radius: 8px !important;
+    border: 1px solid var(--border-color, rgba(128, 128, 128, 0.15)) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+    padding: 14px 16px !important;
+    background-color: var(--code-background) !important;
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* 鼠标悬停在代码块上时显现边框微光 */
+.HyperMD-codeblock:hover, .markdown-rendered pre:hover {
+    border-color: var(--interactive-accent) !important;
+    transition: border-color 0.25s ease;
+}
+
+/* --- 4. 行内代码 (Inline Code) 气泡化 --- */
+code:not([class*="language-"]) {
+    color: var(--text-accent, #e95656) !important; /* 带有微妙提示感的轻度彩色 */
+    background-color: rgba(128, 128, 128, 0.1) !important;
+    padding: 0.15em 0.4em !important;
+    margin: 0 0.15em !important;
+    border-radius: 4px !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 0.88em !important;
+    border: 1px solid rgba(128, 128, 128, 0.15) !important;
+    vertical-align: middle;
+}
+
+/* --- 5. 重点标记 (Highlight) 与加粗 (Bold) 质感提升 --- */
+strong, .cm-strong {
+    font-weight: 600 !important;
+    color: var(--text-normal) !important;
+}
+
+mark, .cm-highlight {
+    background-color: rgba(255, 212, 0, 0.3) !important; /* 柔和的高亮黄，不刺眼 */
+    color: inherit !important;
+    border-radius: 2px;
+    padding: 0 2px;
+}
+
+/* --- 6. 现代看板化的引用块 (Blockquote) --- */
+blockquote, .cm-embed-block:has(blockquote) {
+    border-left: 4px solid var(--interactive-accent) !important;
+    background-color: var(--background-secondary) !important;
+    padding: 10px 16px !important;
+    border-radius: 0 8px 8px 0;
+    margin: 1em 0 !important;
+    color: var(--text-muted) !important;
+}
+/* --- 7. 现代化轻量表格 (Table) 美化 --- */
+.markdown-rendered table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin: 20px 0 !important;
+    font-size: 0.95em !important;
+    border-radius: 6px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02) !important;
+}
+
+.markdown-rendered th {
+    background-color: var(--background-secondary) !important;
+    color: var(--text-normal) !important;
+    font-weight: 600 !important;
+    padding: 10px 14px !important;
+    border-bottom: 2px solid var(--border-color) !important;
+}
+
+.markdown-rendered td {
+    padding: 10px 14px !important;
+    border-bottom: 1px solid rgba(128,128,128,0.1) !important;
+}
+
+/* 隔行变色，让复杂数据极易阅读 */
+.markdown-rendered tr:nth-child(even) {
+    background-color: rgba(128,128,128,0.03) !important;
+}
+
+/* 鼠标悬停高亮整行 */
+.markdown-rendered tr:hover {
+    background-color: rgba(128,128,128,0.06) !important;
+}
+/* --- 8. 现代化全局搜索结果美化 --- */
+.search-result-file-title {
+    font-weight: 600 !important;
+    color: var(--text-normal) !important;
+    font-size: 1.05em !important;
+    padding: 6px 0 !important;
+}
+
+/* 让搜索匹配到的上下文文本更易读 */
+.search-result-file-match-container {
+    padding-left: 12px !important;
+    border-left: 2px solid var(--border-color) !important;
+    margin: 6px 0 12px 4px !important;
+    font-size: 0.9em !important;
+    line-height: 1.6 !important;
+    color: var(--text-muted) !important;
+}
+
+/* 美化搜索关键词的“黄色高亮” */
+.search-result-file-match-badge, mark {
+    background-color: rgba(255, 212, 0, 0.25) !important;
+    color: var(--text-normal) !important;
+    border-bottom: 2px solid #ffd400; /* 加一条精致的下划线 */
+    border-radius: 2px;
+}
+/* ==========================================================================
+   9. Omnisearch 搜索结果深度视觉净化 (合法的纯 CSS 强行截断版)
+   ========================================================================== */
+
+/* 强制缩减 Omnisearch 预览区域的容器高度，拒绝被长链接撑大 */
+.omnisearch-result-excerpt {
+    line-height: 1.5 !important;
+    color: var(--text-muted) !important;
+    font-size: 0.85em !important;
+    font-family: 'PingFang SC', sans-serif !important;
+
+    /* 使用现代浏览器百分之百支持的旧版弹性盒截断，强行限制为最大 2 行 */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    word-break: break-all !important;
+}
+
+/* 像素级美化：强化关键词高亮，弱化背景干扰 */
+.omnisearch-result-excerpt em {
+    background-color: rgba(255, 212, 0, 0.25) !important;
+    color: var(--text-normal) !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    padding: 1px 3px !important;
+    border-radius: 3px !important;
+    border-bottom: 2px solid var(--interactive-accent, #ffd400) !important;
+}
+
+/* 让 Omnisearch 面板整体带上现代 macOS 标志性的悬浮阴影 */
+.omnisearch-modal {
+    border: 1px solid var(--border-color, rgba(128, 128, 128, 0.15)) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12) !important;
+    border-radius: 12px !important;
+}
