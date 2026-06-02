@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge/数据结构/算法/查找/动态规划.md",
-                "mode": "source",
-                "source": false
+                "file": "Knowledge/数据结构/算法/扩展/未命名.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "动态规划"
+              "title": "未命名"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Knowledge/数据结构/算法/查找/动态规划.md",
+                "file": "Knowledge/数据结构/算法/扩展/未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "动态规划 的大纲"
+              "title": "未命名 的大纲"
             }
           }
         ],
@@ -200,25 +200,26 @@
       "sortable-file-explorer:Sortable File Explorer": false
     }
   },
-  "active": "2e5a52c71939bba9",
+  "active": "4d873589b4711700",
   "lastOpenFiles": [
-    "Knowledge/数据结构/算法/排序/归并排序.md",
-    "Knowledge/数据结构/算法/查找/动态规划.md",
-    "Knowledge/数据结构/算法/排序/快速排序.md",
-    "Knowledge/数据结构/算法/排序/冒泡排序.md",
-    "Knowledge/数据结构/算法/排序/堆排序.md",
-    "Knowledge/数据结构/算法/排序/简单选择排序.md",
-    "Knowledge/数据结构/算法/排序/希尔排序.md",
-    "Knowledge/数据结构/算法/排序/直接插入排序.md",
-    "Knowledge/数据结构/算法/排序/总述.md",
-    "Knowledge/数据结构/算法/查找/平衡二叉树（AVLT）.md",
-    "未命名.md",
-    "Knowledge/数据结构/算法/查找/红黑树（RBT）.md",
     "Knowledge/数据结构/算法/查找/二叉排序树（BST）.md",
-    "Knowledge/数据结构/算法/查找/多路查找树（BT）.md",
+    "Knowledge/数据结构/算法/扩展/未命名.md",
+    "Knowledge/数据结构/算法/扩展",
+    "Knowledge/数据结构/算法/排序/堆排序.md",
+    "Knowledge/数据结构/算法/排序/直接插入排序.md",
+    "Knowledge/数据结构/算法/排序/希尔排序.md",
+    "Knowledge/数据结构/算法/排序/简单选择排序.md",
+    "Knowledge/数据结构/算法/排序/快速排序.md",
+    "Knowledge/数据结构/算法/排序/归并排序.md",
     "Knowledge/数据结构/算法/查找/概述.md",
-    "Knowledge/数据结构/算法/查找",
+    "Knowledge/数据结构/算法/排序/总述.md",
     "Knowledge/数据结构/算法/面试题/O(n) 时间复杂度内求无序数组中的第 K 大元素.md",
+    "Knowledge/数据结构/算法/排序/冒泡排序.md",
+    "Knowledge/数据结构/算法/查找/动态规划.md",
+    "Knowledge/数据结构/算法/查找/平衡二叉树（AVLT）.md",
+    "Knowledge/数据结构/算法/查找/红黑树（RBT）.md",
+    "Knowledge/数据结构/算法/查找/多路查找树（BT）.md",
+    "Knowledge/数据结构/算法/查找",
     "Knowledge/数据结构/算法/面试题",
     "Knowledge/数据结构/概述.md",
     "Knowledge/数据结构/算法/概述.md",
@@ -237,9 +238,7 @@
     "Templates/任务卡（Task Note）.md",
     "README.md",
     "Inbox/111.md",
-    "Knowledge/Software/Obsidian/Obsidian 附件.md",
     "_resources",
-    "Knowledge/Software/Obsidian",
     "Attachments/Pasted image 20260531090040.png",
     "Pasted image 20260531085757.png",
     "Untitled/Attachments/Pasted image 20260531090032.png",

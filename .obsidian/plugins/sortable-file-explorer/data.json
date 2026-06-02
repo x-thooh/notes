@@ -15,18 +15,15 @@
     "Knowledge/数据结构/算法/排序/冒泡排序.md": 5,
     "Knowledge/数据结构/算法/排序/归并排序.md": 7,
     "Knowledge/数据结构/算法/查找/概述.md": 0,
-    "Knowledge/数据结构/算法/查找/多路查找树（BT）.md": 1,
-    "Knowledge/数据结构/算法/查找/二叉排序树（BST）.md": 2,
-    "Knowledge/数据结构/算法/查找/红黑树（RBT）.md": 3,
-    "Knowledge/数据结构/算法/查找/平衡二叉树（AVLT）.md": 4,
+    "Knowledge/数据结构/算法/查找/多路查找树（BT）.md": 3,
+    "Knowledge/数据结构/算法/查找/二叉排序树（BST）.md": 1,
+    "Knowledge/数据结构/算法/查找/红黑树（RBT）.md": 4,
+    "Knowledge/数据结构/算法/查找/平衡二叉树（AVLT）.md": 2,
     "Knowledge/数据结构/算法/查找/动态规划.md": 5
   },
   "collapsedFolders": {
-    "Knowledge/数据结构/算法/排序": true,
     "Templates/Scripts": true,
-    "Templates": true,
     "Journal": true,
-    "Knowledge/数据结构/算法": true,
     "Knowledge/Software/Obsidian": true
   },
   "hideFileExtensions": false,
