@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge/数据结构/算法/面试题/逆波兰表达式.md",
+                "file": "Knowledge/LInux/命令/find.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "逆波兰表达式"
+              "title": "find"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Knowledge/数据结构/算法/面试题/逆波兰表达式.md",
+                "file": "Knowledge/LInux/命令/find.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "逆波兰表达式 的大纲"
+              "title": "find 的大纲"
             }
           }
         ],
@@ -202,8 +202,17 @@
   },
   "active": "7e1c3b629f3509aa",
   "lastOpenFiles": [
-    "Knowledge/数据结构/算法/动态规划/概述.md",
+    "Knowledge/正则/未命名.md",
+    "Knowledge/LInux/命令/find.md",
+    "Knowledge/正则",
+    "Knowledge/LInux/命令/xargs.md",
+    "Knowledge/Software/Obsidian/Obsidian 附件.md",
+    "Knowledge/LInux/命令/未命名.md",
+    "Knowledge/LInux/命令",
+    "Knowledge/LInux",
+    "Reference/AGENTS--20260601.base",
     "Knowledge/数据结构/算法/面试题/逆波兰表达式.md",
+    "Knowledge/数据结构/算法/动态规划/概述.md",
     "Knowledge/数据结构/算法/查找/折半查找.md",
     "Knowledge/数据结构/算法/扩展/动态规划.md",
     "Knowledge/数据结构/算法/动态规划",
@@ -228,18 +237,9 @@
     "Knowledge/数据结构/概述.md",
     "Knowledge/数据结构/算法/概述.md",
     "Knowledge/数据结构/算法/排序",
-    "Inbox/闪念胶囊.md",
     "未命名",
-    "Knowledge/数据结构/Untitled.md",
-    "Tags",
-    "Knowledge/数据结构/算法",
-    "Templates/Stand Note 1.md",
-    "AGENTS.md",
     "_resources/Pasted image 20260531110630.png",
     "_resources/Pasted image 20260531110626.png",
-    "Knowledge/数据结构",
-    "Reference/AGENTS--20260601.base",
-    "Templates/任务卡（Task Note）.md",
     "Attachments/Pasted image 20260531090040.png",
     "Pasted image 20260531085757.png",
     "Untitled/Attachments/Pasted image 20260531090032.png",

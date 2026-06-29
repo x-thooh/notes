@@ -24,9 +24,13 @@
   "collapsedFolders": {
     "Templates/Scripts": true,
     "Journal": true,
-    "Knowledge/Software/Obsidian": true,
     "Knowledge/数据结构/算法/排序": true,
-    "Knowledge/数据结构/算法/查找": true
+    "Knowledge/数据结构/算法/查找": true,
+    "_resources": true,
+    "Templates": true,
+    "Knowledge/数据结构": true,
+    "Reference": true,
+    "Knowledge/Software": true
   },
   "hideFileExtensions": false,
   "showIcons": true,
