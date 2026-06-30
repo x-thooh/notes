@@ -19,7 +19,13 @@
     "Knowledge/数据结构/算法/查找/二叉排序树（BST）.md": 1,
     "Knowledge/数据结构/算法/查找/红黑树（RBT）.md": 4,
     "Knowledge/数据结构/算法/查找/平衡二叉树（AVLT）.md": 2,
-    "Knowledge/数据结构/算法/扩展/二叉树.md": 0
+    "Knowledge/数据结构/算法/扩展/二叉树.md": 0,
+    "Knowledge/LInux/常用命令（Command）/目录处理命令.md": 0,
+    "Knowledge/LInux/常用命令（Command）/链接命令.md": 1,
+    "Knowledge/LInux/常用命令（Command）/文件搜索命令": 2,
+    "Knowledge/LInux/常用命令（Command）/帮助命令.md": 3,
+    "Knowledge/LInux/常用命令（Command）/压缩与解压命令.md": 4,
+    "Knowledge/LInux/常用命令（Command）/关机与重启命令.md": 5
   },
   "collapsedFolders": {
     "Templates/Scripts": true,

@@ -16,22 +16,32 @@ deck: Note::Language
 # find
 
 ## 摘要
+`find` 是 Linux 下最强大、最常用的文件查找命令之一，它会在指定目录树中**实时搜索**，并根据你提供的条件（名称、类型、大小、时间等）进行匹配，然后执行相应操作。
 
-```
+### 原理
+`find`在工作时会遍历指定的目录，通过匹配指定的条件搜寻我们需要的文件或者目录。因此，`find`命令具有以下特点：
+- 查找速度略慢
+- 精确查找
+- 实时查找
+- 可能只搜索用户具备读取和执行权限的目录（这点同locate）
+
+## 语法
+
+```shell
 find [搜索路径] [匹配条件] [执行动作]
 ```
 
+### 选项
 
-
-## 搜索路径
-> [!tip] 如果不指定路径，默认在当前目录下搜索。
+#### 搜索路径
+> [!note] 如果不指定路径，默认在当前目录下搜索。
 
 支持绝对路径与相对路径
 
-## 匹配条件
-> [!tip] 条件之间默认是“与”（AND）的关系。
+#### 匹配条件
+> [!note] 条件之间默认是“与”（AND）的关系。
 
-### 文件名称
+##### 文件名称
 
 ```shell
 # 精确查找名为 file.txt 的文件
@@ -44,7 +54,7 @@ find /var/log -name "*.log"
 find . -name "abc*"
 ```
 
-### 文件类型
+##### 文件类型
 
 ```shell
 # 普通文件
@@ -59,7 +69,7 @@ find . -type b
 find . -type c
 ```
 
-### 文件大小
+##### 文件大小
 > [!note] 常用单位：c(字节)、k(KB)、M(MB)、G(GB)
 
 ```shell
@@ -71,9 +81,9 @@ find . -size -1G
 find . -size 500k
 ```
 
-### 文件时间
+##### 文件时间
 
-> [!summary] 时间类型
+> [!note] 时间类型
 > mtime/amin 修改时间
 > atime/amin  访问时间
 > ctime/cmin 状态更改时间
@@ -89,7 +99,7 @@ find . -mtime 0
 find . -newer file.txt
 ```
 
-### 文件权限
+##### 文件权限
 ```
 # 权限恰好是 644
 find . -perm 644
@@ -114,7 +124,7 @@ find . -nogroup
 > [!note] 备注
 > `-perm /222` **OR（或）**：**任意**一个位置有写权限即匹配
 > `-perm -222` **AND（且）**：每个位置**全部**必须有写权限才匹配
-### 组合条件
+#### 组合条件
 
 ```shell
 # 与（默认）
@@ -128,9 +138,9 @@ find . -not -name "*.txt"
 find . \( -name "*.c" -o -name "*.h" \) -size +10k
 ```
 
-## 执行动作
+#### 执行动作
 
-#### `-print`（默认，打印路径）
+##### `-print`（默认，打印路径）
 
 ```shell
 find . -name "*.conf" -print
@@ -141,7 +151,7 @@ find . -name "*.conf" -print
 find . -name "*.log" -ls
 ```
 
-#### `-delete`（删除找到的文件，要小心！）
+##### `-delete`（删除找到的文件，要小心！）
 ```shell
 find . -name "*.tmp" -**delete**
 ```
@@ -162,7 +172,7 @@ find . -name "*.txt" -exec cat {} \;
 > - `{}` 代表查找到的文件名
 > - `\;` 表示命令结束（必须转义分号）  
 
-#### `-exec ... {} +`（高效版，将所有文件一次性传给命令）
+##### `-exec ... {} +`（高效版，将所有文件一次性传给命令）
 
 ```shell
 # 批量删除，效率更高
@@ -170,7 +180,7 @@ find . -name "*.log" -exec rm {} +
 find . -name "*.c" -exec grep "main" {} +
 ```
 
-#### `-ok`（类似 -exec，但每步会询问确认）
+##### `-ok`（类似 -exec，但每步会询问确认）
 ```shell
 find . -name "*.conf" -ok rm {} \;
 ```
@@ -186,10 +196,7 @@ find . -name "*.conf" -ok rm {} \;
 find . -name "*.txt" -printf "%p  %s bytes\n"
 ```
 
-
-
-
-## 常用命令
+## 案例
 
 ### 查找并统计行数
 ```shell
@@ -218,7 +225,7 @@ find . -name "*.pdf" -exec cp {} /backup/ \;
 find . -path "./cache" -prune -o -name "*.txt" -print
 ```
 
-> [!info] 
+> [!note] 
 > - `-prune` 的作用是**告诉 find 不要进入这个目录**，它本身总返回 true
 > - `-o`（或）确保：如果匹配了 `./cache`，就跳过后面的 `-name` 检查
 ## 延伸

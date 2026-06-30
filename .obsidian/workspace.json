@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge/LInux/命令/find.md",
+                "file": "Knowledge/LInux/常用命令（Command）/文件搜索命令/grep.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "find"
+              "title": "grep"
             }
           }
         ]
@@ -89,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 230.5
   },
   "right": {
     "id": "1a903a3603a427e5",
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Knowledge/LInux/命令/find.md",
+                "file": "Knowledge/LInux/常用命令（Command）/文件搜索命令/grep.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "find 的大纲"
+              "title": "grep 的大纲"
             }
           }
         ],
@@ -180,7 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 234.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,10 +202,23 @@
   },
   "active": "7e1c3b629f3509aa",
   "lastOpenFiles": [
-    "Knowledge/正则/未命名.md",
-    "Knowledge/LInux/命令/find.md",
-    "Knowledge/正则",
+    "Knowledge/LInux/常用命令（Command）/文件搜索命令/未命名.md",
+    "Knowledge/LInux/常用命令（Command）/文件搜索命令/grep.md",
+    "Knowledge/LInux/常用命令（Command）/文件搜索命令/find.md",
+    "Knowledge/LInux/常用命令（Command）/文件搜索命令/awk.md",
+    "Knowledge/LInux/常用命令（Command）/基本信息.md",
+    "Knowledge/LInux/常用命令（Command）/管理用户和用户组.md",
+    "Knowledge/LInux/常用命令（Command）/文件搜索命令/which&whereis.md",
+    "Knowledge/LInux/常用命令（Command）/目录处理命令.md",
+    "Knowledge/LInux/常用命令（Command）/关机与重启命令.md",
+    "Knowledge/LInux/常用命令（Command）/压缩与解压命令.md",
+    "Knowledge/LInux/常用命令（Command）/帮助命令.md",
+    "Knowledge/LInux/常用命令（Command）/链接命令.md",
+    "Knowledge/LInux/常用命令（Command）/文件搜索命令",
     "Knowledge/LInux/命令/xargs.md",
+    "Knowledge/LInux/常用命令（Command）",
+    "Knowledge/正则/未命名.md",
+    "Knowledge/正则",
     "Knowledge/Software/Obsidian/Obsidian 附件.md",
     "Knowledge/LInux/命令/未命名.md",
     "Knowledge/LInux/命令",
@@ -223,21 +236,8 @@
     "Knowledge/数据结构/算法/扩展/二叉树.md",
     "Knowledge/数据结构/算法/扩展",
     "Knowledge/数据结构/算法/排序/堆排序.md",
-    "Knowledge/数据结构/算法/排序/直接插入排序.md",
-    "Knowledge/数据结构/算法/排序/希尔排序.md",
-    "Knowledge/数据结构/算法/排序/简单选择排序.md",
-    "Knowledge/数据结构/算法/排序/快速排序.md",
-    "Knowledge/数据结构/算法/排序/归并排序.md",
-    "Knowledge/数据结构/算法/查找/概述.md",
-    "Knowledge/数据结构/算法/排序/总述.md",
-    "Knowledge/数据结构/算法/面试题/O(n) 时间复杂度内求无序数组中的第 K 大元素.md",
-    "Knowledge/数据结构/算法/排序/冒泡排序.md",
     "Knowledge/数据结构/算法/查找",
     "Knowledge/数据结构/算法/面试题",
-    "Knowledge/数据结构/概述.md",
-    "Knowledge/数据结构/算法/概述.md",
-    "Knowledge/数据结构/算法/排序",
-    "未命名",
     "_resources/Pasted image 20260531110630.png",
     "_resources/Pasted image 20260531110626.png",
     "Attachments/Pasted image 20260531090040.png",
